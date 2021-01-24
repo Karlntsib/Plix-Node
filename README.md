@@ -7,7 +7,7 @@ You can use it to build your own decentralised applications. Waves provides full
 ## ✨ Demo
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/1945126/78667964-88209480-78e2-11ea-9304-72178a6a5974.gif" alt="plix Node Run Demo">
+    <" alt="plix Node Run Demo">
 </p>
 
 PLIX node is a host connected to the blockchain network with the next functions:
@@ -158,11 +158,6 @@ Keep up with the latest news and articles, and find out all about events happeni
 
 ## ⛓ Links
 
-- [Documentation](https://docs.wavesplatform.com/)
-- Blockchain clients for Mainnet: [Waves Exchange](https://waves.exchange/), [Waves FX](https://github.com/wavesfx), [SIGN app](https://www.sign-web.app/)
-- Blockchain clients for Testnet: [Waves Exchange](https://testnet.waves.exchange/)
-- Blockchain Explorer: [Mainnet](https://wavesexplorer.com/), [Testnet](https://wavesexplorer.com/testnet), [Stagenet](https://wavesexplorer.com/stagenet) 
-- [Ride Online IDE](https://ide.wavesplatform.com/)
 
 ## 📝 Licence
 
