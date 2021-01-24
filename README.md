@@ -1,84 +1,52 @@
-<h1 align="center">🔷 Waves Platform Node</h1>
 
-<p align="center">
 
-  <a href="https://travis-ci.org/wavesplatform/Waves" target="_blank">
-    <img alt="Build status" src="https://travis-ci.org/wavesplatform/Waves.svg?branch=master"  />
-  </a>
-  <a href="https://github.com/wavesplatform/Waves/releases" target="_blank">
-    <img alt="Downloads" src="https://img.shields.io/github/downloads/wavesplatform/Waves/total?cache=false&style=flat-square&style=flat-square" />
-  </a>
-  <a href="https://github.com/wavesplatform/Waves/blob/master/LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://badgen.net/github/license/wavesplatform/Waves"/>
-  </a>
-  <a href="https://github.com/wavesplatform/Waves/issues" target="_blank">
-    <img alt="Open Issues" src="https://badgen.net/github/open-issues/wavesplatform/Waves" />
-  </a>
-  <a href="https://twitter.com/wavesplatform" target="_blank">
-    <img alt="Twitter: WavesPlatform" src="https://badgen.net/twitter/follow/wavesglobalnews" />
-  </a>
-</p>
-
-> Waves is an open source [blockchain platform](https://wavesplatform.com/).<br /> 
+> PLIX is an open source [blockchain platform](https:plixcoin.io).<br /> 
 You can use it to build your own decentralised applications. Waves provides full blockchain ecosystem including smart contracts language called RIDE.
 
 
 ## ✨ Demo
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/1945126/78667964-88209480-78e2-11ea-9304-72178a6a5974.gif" alt="Waves Node Run Demo">
+    <img src="https://user-images.githubusercontent.com/1945126/78667964-88209480-78e2-11ea-9304-72178a6a5974.gif" alt="plix Node Run Demo">
 </p>
 
-Waves node is a host connected to the blockchain network with the next functions:
+PLIX node is a host connected to the blockchain network with the next functions:
 
-- Processing and validation of [transactions](https://docs.wavesplatform.com/en/blockchain/transaction/transaction-validation.html)
-- Generation and storage of [blocks](https://docs.wavesplatform.com/en/blockchain/block.html)
-- Network [communication](https://docs.wavesplatform.com/en/blockchain/transaction.html) with other nodes
-- [REST API](https://docs.wavesplatform.com/en/building-apps/how-to/basic/retrieve)
-- [Extensions](https://docs.wavesplatform.com/en/waves-node/extensions/) management
 
-Learn more about Waves Node in the [documentation](https://docs.wavesplatform.com/en/waves-node/what-is-a-full-node.html).
+Learn more about PLIX Node in the [documentation](https://plixcoin.io).
 
 ## 🚀️ Getting started
 
 A quick introduction of the minimal setup you need to get a running node. 
 
 *Prerequisites:*
-- configuration file for a needed network from [here](https://github.com/wavesplatform/Waves/tree/master/node)
-- `waves-all*.jar` file from [releases](https://github.com/wavesplatform/Waves/releases) 
+- configuration file for a needed network from [here](https://plixcoin.io)
 
 Linux systems:
 ```bash
 sudo apt-get update
 sudo apt-get install openjdk-8-jre
-java -jar node/target/waves-all*.jar path/to/config/waves-{network}.conf
+java -jar node/target/plix-all*.jar path/to/config/plix-{network}.conf
 ```
 
 Mac systems (assuming already installed homebrew):
 ```bash
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-java -jar node/target/waves-all*.jar path/to/config/waves-{network}.conf
+java -jar node/target/plix-all*.jar path/to/config/plix-{network}.conf
 ```
 
-Windows systems (assuming already installed OpenJDK 8):
-```bash
-java -jar node/target/waves-all*.jar path/to/config/waves-{network}.conf
-```
 
-Using docker image:
-```bash
-docker run -p 6869:6869 -p 6868:6868 -e WAVES_NETWORK=MAINNET -e WAVES_LOG_LEVEL=DEBUG -e WAVES_HEAP_SIZE=2g -v YOUR_LOCAL_PATH_HERE:/waves wavesplatform/node
-```
 
-> More details on how to install a node for different platforms you can [find in the documentation](https://docs.wavesplatform.com/en/waves-node/how-to-install-a-node/how-to-install-a-node#system-requirements). 
+
+> More details on how to install a node for different platforms you can [find in the documentation](https://plixcoin.io). 
 
 ## 🔧 Configuration
 
-The best starting point to understand available configuration parameters is the [this article](https://docs.wavesplatform.com/en/waves-node/node-configuration).
+The best starting point to understand available configuration parameters is the [this article](https://plixcoin.io).
 
 The easiest way to start playing around with configurations is to use default configuration files for different networks, they're available [here](./node).
 
-Logging configuration with all available levels and parameters is described [here](https://docs.wavesplatform.com/en/waves-node/logging-configuration).
+Logging configuration with all available levels and parameters is described [here](https://plixcoin.io).
 
 ## 👨‍💻 Development
 
@@ -104,8 +72,8 @@ Please follow the SBT installation instructions depending on your platform ([Lin
 *2. Clone this repo*
 
 ```bash
-git clone https://github.com/wavesplatform/Waves.git
-cd Waves
+
+cd PLIX
 ```
 
 *3. Compile and run tests*
@@ -121,7 +89,7 @@ Create a Docker image before you run any test:
 sbt node-it/docker
 ```
 
-- Run all tests. You can increase or decrease number of parallel running tests by changing `waves.it.max-parallel-suites`
+- Run all tests. You can increase or decrease number of parallel running tests by changing `plix.it.max-parallel-suites`
 system property:
 ```bash
 sbt -Dwaves.it.max-parallel-suites=1 node-it/test
@@ -165,7 +133,7 @@ The majority of contributors to this project use IntelliJ IDEA for development, 
 1. Click on `Add configuration` (or `Edit configurations...`)
 2. Click on `+` to add a new configuration, choose `Application`
 3. Specify:
-   - Main class: `com.wavesplatform.Application`
+   - Main class: `com.plixplatform.Application`
    - Program arguments: `/path/to/configuration`
    - Use classpath of module: `extension-module`
 4. Click on `OK`
@@ -185,8 +153,8 @@ Please follow the [code of conduct](./CODE_OF_CONDUCT.md) during communication w
 
 Keep up with the latest news and articles, and find out all about events happening on the [Waves Platform](https://wavesplatform.com/).
 
-- [Telegram Dev Chat](https://t.me/waves_ride_dapps_dev)
-- [Waves Blog](https://blog.wavesplatform.com/)
+- [Telegram Dev Chat]()
+- [plix Blog](https://blog.plixplatform.com/)
 
 ## ⛓ Links
 
